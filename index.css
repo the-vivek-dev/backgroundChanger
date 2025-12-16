@@ -1,0 +1,55 @@
+*{
+    font-weight: bolder;
+    font-family: times;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.main{
+    display: flex;
+    justify-content: center;
+
+}
+.container{
+    border: 0.5rem ridge black; 
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    gap: 1rem;
+    background-color: gray;
+    border-radius: 1rem; 
+}
+
+
+.container > button{
+   padding: 0.5rem;
+   padding-left: 2rem;
+   padding-right: 2rem;
+   border: 0.5rem ridge gray;
+   border-top-right-radius: 1rem;
+   border-bottom-left-radius: 1rem;
+   color: black;
+   font-size: 1rem;
+}
+
+@media screen and (max-width:780px){
+.container > button{
+    width: 3rem;
+padding-left: 0.5rem;
+   border: 0.5rem ridge rgb(211, 200, 200);
+      font-size: 0.5rem;
+}
+
+.container{
+    gap: 0.2rem;
+}
+}
