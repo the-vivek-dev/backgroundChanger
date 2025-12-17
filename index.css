@@ -1,24 +1,25 @@
-*{
+* {
     font-weight: bolder;
     font-family: times;
     box-sizing: border-box;
 }
 
-body{
+body {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
-.main{
+
+.main {
     display: flex;
     justify-content: center;
 
 }
-.container{
-    border: 0.5rem ridge black; 
-    height: 5rem;
+
+.container {
+    border: 0.5rem ridge black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,30 +27,67 @@ body{
     box-sizing: border-box;
     gap: 1rem;
     background-color: gray;
-    border-radius: 1rem; 
+    border-radius: 1rem;
 }
 
 
-.container > button{
-   padding: 0.5rem;
-   padding-left: 2rem;
-   padding-right: 2rem;
-   border: 0.5rem ridge gray;
-   border-top-right-radius: 1rem;
-   border-bottom-left-radius: 1rem;
-   color: black;
-   font-size: 1rem;
+.container>button {
+    padding: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border: 0.5rem ridge gray;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    color: black;
+    font-size: 1rem;
 }
 
-@media screen and (max-width:780px){
-.container > button{
-    width: 3rem;
-padding-left: 0.5rem;
-   border: 0.5rem ridge rgb(211, 200, 200);
-      font-size: 0.5rem;
+@media screen and (max-width:740px) {
+
+    .container>button {
+        font-size: 0.6rem;
+    }
 }
 
-.container{
-    gap: 0.2rem;
+@media screen and (max-width:650px) {
+
+    .container {
+        padding: 0.5rem;
+        gap: 0rem;
+    }
+
+    .container>button {
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+    }
 }
+
+@media screen and (max-width:400px) {
+
+    .container>button {
+        padding: 0.3rem;
+    }
+}
+
+@media screen and (max-width:300px) {
+
+    .container {
+        border: 0.2rem ridge black;
+        padding: 0.4rem;
+    }
+
+    .container>button {
+        font-size: 0.4rem;
+        border: 0.4rem ridge gray;
+    }
+
+}
+
+@media screen and (max-width:225px) {
+
+    .container {
+        flex-wrap: wrap;
+        height: 7rem;
+    }
+
 }
