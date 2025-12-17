@@ -40,6 +40,7 @@ body {
     border-bottom-left-radius: 1rem;
     color: black;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 @media screen and (max-width:740px) {
